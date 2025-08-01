@@ -1,0 +1,21 @@
+# Devenv
+.devenv*
+devenv.local.nix
+
+# direnv
+.direnv
+
+# pre-commit
+.pre-commit-config.yaml
+
+# Bolt
+Puppetfile
+.modules/
+.resource_types/
+.vscode/settings.json
+bolt-debug.log
+.plan_cache.json
+.task_cache.json
+
+# puppet vscode debug log
+puppet-debug.log
