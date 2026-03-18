@@ -8,9 +8,10 @@
   packages = [
     pkgs.git
     pkgs.yamllint
-    # required for openbolt (psych
+    # some dev libraries are required for building native gems as dependencies for openbolt
     # https://discourse.nixos.org/t/error-running-rails-new-with-default-nix-ruby-anyone-has-manager-using-ruby-on-rails-on-nixos/36546
     pkgs.libyaml
+    pkgs.libffi
   ];
 
   # https://devenv.sh/languages/
