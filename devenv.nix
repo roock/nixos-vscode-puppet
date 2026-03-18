@@ -8,15 +8,18 @@
   packages = [
     pkgs.git
     pkgs.yamllint
+    # required for openbolt (psych
+    # https://discourse.nixos.org/t/error-running-rails-new-with-default-nix-ruby-anyone-has-manager-using-ruby-on-rails-on-nixos/36546
+    pkgs.libyaml
   ];
 
   # https://devenv.sh/languages/
   languages.ruby.enable = true;
   languages.ruby.bundler.enable = true;
-  # ruby 3.2 might be  required for porper usage of puppet-lint
+  # ruby 3.3 might be  required for porper usage of puppet-lint
   # https://github.com/puppetlabs/puppet-lint/issues/225
   # https://github.com/puppetlabs/puppet-lint/pull/233
-  languages.ruby.package = pkgs.ruby_3_2;
+  languages.ruby.package = pkgs.ruby_3_3;
 
   # https://devenv.sh/processes/
   # processes.cargo-watch.exec = "cargo-watch";
