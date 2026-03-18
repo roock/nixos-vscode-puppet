@@ -62,3 +62,4 @@ code .
 ## Open Issues
 
 - This has been tested with the `vscode-fhs` NixOS package. Testing with the `vscode`, `vscodium` or `vscodium-fhs` is still outstanding.
+- There's an open pull request in puppet-langage service to fix [Ruby 3.4 compatibility for JSON.generate](https://github.com/puppetlabs/puppet-editor-services/pull/401/changes)
